@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: calle;
+            src: url(fonte/Barrio\ Santo.ttf) format('opentype'), url(fonte/Barrio\ Santo.ttf) format('truetype');
+            font-weight: normal;
+
+            /*
+            tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'calle';
+            font-size: 4em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis neque excepturi aspernatur, debitis, distinctio ipsa eius enim molestiae nesciunt sequi voluptas, atque reprehenderit quae possimus et nihil natus pariatur libero?</p>
+</body>
+</html>
