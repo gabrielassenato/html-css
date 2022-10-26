@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px 25px;
+        }
+
+        col.cnome {
+            background-color: bisque;
+        }
+
+        col.csexo {
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>NB</td>
+            <td>34</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Giovanna Vidal</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Alex Fernandes</td>
+            <td>M</td>
+            <td>31</td>
+            <td>Padeiro</td>
+        </tr>
+        <tr>
+            <td>Patricia Silva</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Artista</td>
+        </tr>
+        <tr>
+            <td>João Fagundes</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Motoboy</td>
+        </tr>
+        <tr>
+            <td>Gabriel Souza</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Jogador</td>
+        </tr>
+    </table>
+</body>
+</html>
