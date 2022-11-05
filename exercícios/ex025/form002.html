@@ -7,6 +7,23 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="isu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required size="15" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+        <!--o required diz que é necessario preencher o box-->
+        <!-- SIZE determina quantas caracteres aparecerão no box e PLACEHOLDER dá uma dica-->
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="4" maxlength="4" autocomplete="current-password">
+            <!-- max e minlength determina a quantidade de caracteres devem ser inseridas-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
